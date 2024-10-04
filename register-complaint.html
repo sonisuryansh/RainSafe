@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="RainSafe.css">
+    <title>Register Complaint - Vassh</title>
+</head>
+<body class="form-background">
+    <section class="complaint-form-container">
+        <h2>Complaint Form</h2>
+        <form id="complaintForm" class="complaint-form" onsubmit="handleComplaintSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            <br>
+            <br>
+            <label for="area">Area Name</label>
+            <input type="text" id="area" name="area" placeholder="Enter area name" required>
+            <br>
+            <br>
+            <label for="area">Pincode</label>
+            <input type="text" id="area" name="area" placeholder="Enter area pincode" required>
+            <br>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Submit</button>
+            <br>
+            <button type="reset">Clear</button>
+        </form>
+        <p id="complaintStatus"></p>
+    </section>
+
+    <script src="RainSafe.js">
+       
+    </script>
+</body>
+</html>

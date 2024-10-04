@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="RainSafe.css">
+    <title>Contact Us - RainSafe</title>
+</head>
+<body>
+    <header>
+        <div class="header-title-container">
+            <h1 id="header-title">RainSafe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>About</b></a></li>
+                <li><a href="index.html"><b>Services</b></a></li>
+                <li><a href="index.html"><b>News</b></a></li>
+                <li><a href="index.html"><b>Live Data</b></a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+            <br>
+            <br>
+            <label for="message">Your Message:</label>
+            <textarea name="user_message" id="message" rows="3" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="status"></p>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="RainSafe.js"></script>
+</body>
+</html>

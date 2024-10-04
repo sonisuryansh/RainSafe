@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="RainSafe.css">
+    <title>Submit Query - Vassh</title>
+</head>
+<body class="form-background">
+    <section class="query-form-container">
+        <h2>Query Form</h2>
+        <form id="queryForm" class="query-form" onsubmit="handleQuerySubmit(event)">
+            <label for="problem">Problem Type:</label>
+            <select id="problem" name="problem" required>
+                <option value="road">Choose Proble Type</option>
+                <option value="road">Road</option>
+                <option value="home_sewage">Home Sewage Problem</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="time">Problem Time:</label>
+            <select id="time" name="time" required>
+                <option value="week">Problem Duration</option>
+                <option value="1-week">1 week</option>
+                <option value="2-week">2 week</option>
+                <option value="3-week">3 week</option>
+                <option value="others">Others</option>
+            </select>
+            <br>
+            <br>
+            <label for="level">Problem Level:</label>
+            <select id="level" name="level" required>
+                <option value="problem">Problem Level</option>
+                <option value="normal">Normal</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="high">High</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <br>
+            <button type="reset">Clear</button>
+        </form>
+        <p id="queryStatus"></p>
+    </section>
+
+    <script src="RainSafe.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    transition: background-color 0.5s, color 0.5s;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.query-form-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.query-form {
+    align-items: center;
+    color: white;
+    width: 100%;
+    max-width: 320px;
+    padding: 15px;
+    background: linear-gradient(145deg, #2196F3, #1976D2); 
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.query-form label {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.query-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: black; 
+    font-size: 14px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.query-form select:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 8px;
+}
+
+.query-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.query-form button {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #ffffff, #eeeeee);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #2196F3; 
+    padding: 8px 15px;
+    font-size: 15px;
+    color: #1976D2;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.query-form button:hover {
+    background-color: #2196F3; 
+    color: red;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.query-form button:focus {
+    border: 2px solid #ffcc00;
+    box-shadow: 0 10px 30px rgba(255, 255, 0, 0.5);
+}

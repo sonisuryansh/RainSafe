@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="RainSafe.css">
+    <title>RainSafe</title>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="header-title-container">
+            <h1 id="header-title">RainSafe</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#services"><b>Services</b></a></li>
+                <li><a href="#news"><b>News</b></a></li>
+                <li><a href="#show_live_data"><b>Live Data</b></a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="news-ticker"></div>
+        <div class="headline">
+            Welcome to our website .... Register if your area is in the water ....
+        </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <h2>RainSafe</h2>
+        <p>At RainSafe, we are committed to keeping your surroundings safe and clean, even in the face of extreme weather conditions. Our platform offers live weather updates tailored to the location you provide, allowing you to stay informed in real-time. In areas where rain threatens to cause flooding, RainSafe steps in to assess the situation and take immediate action.
+
+            We specialize in flood management services, including removing excess flood water, cleaning affected areas, and conducting thorough inspections to help prevent future floods. Our goal is to ensure the safety of your environment and provide peace of mind through proactive flood prevention and cleaning services.
+            
+            Stay connected with RainSafe and let us help protect your home, business, and community from the dangers of flooding.</p>
+    </section>
+    <br>
+    <h2 class="services-heading">Services</h2>
+
+    <section class="grid-container" id="services">
+        <div class="grid-item" id="map">
+            <img src="img1.png" alt="Flood Map">
+            <h4>Check Map for Flood Risks</h4>
+            <button onclick="window.open('https://zoom.earth/maps/satellite/', '_blank')">
+                <i class="fas fa-map"></i> Open Map
+            </button>
+        </div>
+
+        <div class="grid-item" id="register-complaint">
+            <img src="img2.png" alt="Register Complaint">
+            <h4>Register Complaint</h4>
+            <button onclick="window.open('register-complaint.html', '_blank')">
+                <i class="fas fa-exclamation-circle"></i> Register Now
+            </button>
+        </div>
+
+        <div class="grid-item" id="queries">
+            <img src="img3.png" alt="Queries">
+            <h4>Submit a Query</h4>
+            <button onclick="window.open('submit-query.html', '_blank')">
+                <i class="fas fa-question-circle"></i> Submit Query
+            </button>
+        </div>
+
+        <div class="grid-item" id="show_live_data">
+            <img src="water.jpg" alt="Live Data">
+            <h4>Live Data</h4>
+            <button onclick="window.open('Live_data.html', '_blank')">
+                <i class="fas fa-question-circle"></i>Show
+            </button>
+        </div>
+
+        <div class="grid-item" id="donate">
+            <img src="img4.png" alt="Donate">
+            <h4>Donate</h4>
+            <button onclick="toggleDonateMessage()">
+                <i class="fas fa-hand-holding-usd"></i> Donate
+            </button>
+            <p id="donateMessage" class="hidden">This is under process.</p>
+        </div>
+    </section>
+    <section>
+        <div class="news-heading" id="news">NEWS</div> 
+        <br>
+        <div class="news-container">
+            <h1>21 Sewage Treatment Plants in Delhi Fail to Meet Standards</h1>
+            <p class="date"><strong>Date:</strong> October 2024</p>
+            <p class="location"><strong>Location:</strong> New Delhi</p>
+            <div class="image-container">
+                <img src="Delhi_watertreatment.jpg" alt="treatment_plant in Delhi">
+                <p><strong>Flooded streets in Gurgaon</strong></p>
+            </div>
+    
+            <p><strong>Report Summary:</strong><br>Out of the 37 sewage treatment plants (STPs) in Delhi, 21 failed to meet essential standards in several water quality parameters during August, according to a report by the Delhi Pollution Control Committee (DPCC). The STPs, which were tested for key metrics like faecal coliform, biochemical oxygen demand (BOD), total suspended solids (TSS), oil and grease, and dissolved phosphates, showed that 56% were unable to meet the required benchmarks. This continues the trend observed in July and June.</p>
+    
+            <p>The treated or untreated water from these STPs often ends up in the Yamuna and is used for horticulture, further raising concerns about water safety and pollution. Key areas where the STPs underperformed were in TSS, BOD, COD, and faecal coliform levels. The BOD parameter indicates how much oxygen is needed for the water to naturally decompose organic matter, while faecal coliform levels indicate the presence of untreated sewage.</p>
+    
+            <h2>Impact on the Environment:</h2>
+            <p>The continuous failure of the sewage treatment plants to meet environmental standards exacerbates the pollution problem in the Yamuna River and impacts public health. Efforts to improve the quality of the treated water must be prioritized to ensure a safer and cleaner environment for the city.</p>
+        </div>
+        <br>
+        <div class="news-container">
+            <h1>Severe Floods in Gurgaon Cause Major Disruptions</h1>
+            <p class="date"><strong>Date:</strong> October 2024</p>
+            <p class="location"><strong>Location:</strong> Gurgaon</p>
+    
+            <div class="image-container">
+                <img src="gurgaon_flood.jpg" alt="Flood in Gurgaon">
+                <p><strong>Flooded streets in Gurgaon</strong></p>
+            </div>
+    
+            <p><strong>Report Summary:</strong><br>Heavy rainfall in Gurgaon has led to severe flooding in several areas of the city. Roads and residential areas are submerged, disrupting traffic and daily activities. The Municipal Corporation of Gurgaon has reported significant damage to infrastructure, and emergency services are working to rescue residents trapped in waterlogged areas.</p>
+    
+            <p>The weather department has issued further warnings for more rainfall in the coming days, raising concerns about worsening conditions. Many residents are facing power outages, and schools and offices have been closed as a precautionary measure.</p>
+    
+            <h2>Impact on the Community:</h2>
+            <p>The flooding has disrupted transport services, including metro operations and roadways, making it difficult for people to commute. Authorities are urging citizens to stay indoors and avoid unnecessary travel.</p>
+    
+        </div>
+        <br>
+        <div class="news-container">
+            <h1>Bangalore Faces Massive Flooding After Heavy Rains</h1>
+            <p class="date"><strong>Date:</strong> October 2024</p>
+            <p class="location"><strong>Location:</strong> Bangalore</p>
+    
+            <div class="image-container">
+                <img src="bangalore_flood.jpg" alt="Flood in Bangalore">
+                <p><strong>Flooded areas in Bangalore after heavy rains</strong></p>
+            </div>
+    
+            <p><strong>Report Summary:</strong><br>Bangalore has been hit by heavy rainfall over the last few days, leading to massive flooding in various parts of the city. The water has engulfed residential areas and streets, bringing the city's infrastructure to a standstill. The local government has declared a state of emergency and is coordinating rescue operations.</p>
+    
+            <p>Due to the flooding, several parts of the city are without electricity, and authorities are working to restore power. Public transport has been severely affected, with buses and other vehicles struggling to move through waterlogged roads.</p>
+    
+            <h2>Impact on the City:</h2>
+            <p>The flooding has caused widespread disruption in daily life. Schools, businesses, and IT parks are temporarily closed, and many residents have been evacuated to safer locations. Authorities are advising people to avoid travel and stay indoors as the water levels continue to rise.</p>
+    
+            <h2>Stay Updated for More:</h2>
+            <p>We will keep you posted on the flood situation in India . Stay informed about relief efforts and how the city is handling this disaster.</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>RainSafe</h2> 
+        <p>&copy; 2024 RainSafe. All rights reserved.</p>
+    </footer>
+
+    <script src="RainSafe.js"></script>
+</body>
+</html>
